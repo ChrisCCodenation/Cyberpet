@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./Pictures/forest1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.class-selection {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #962929, -1px 1px 0 #861c1c, 1px 1px 0 #000000;
+    font-size: 200%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    /* border: solid; */
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1500px;
+    /* border: solid red; */
+}
+
+.dnd {
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    /* border: solid green; */
+}
+
+.dnd:hover {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 80%);
+    /* border: solid; */
+}
+
+.dnd img {
+    width: 100px;
+    height: 100px;
+}
+
+.dnd p {
+    margin: 0;
+}
+
+.dnd.selected {
+    background: radial-gradient(circle, rgb(6, 210, 217) 0%, rgba(255, 255, 255, 0) 80%);
+    /* border: solid blue; */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.warn {
+    color: red;
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

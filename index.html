@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selection</title>
+    <link rel="stylesheet" href="character.css">
+</head>
+<body>
+    <div class="character-selection">
+        <h1 class="title">Select Your Character</h1>
+        <div class="characters">
+            <div class="character" data-name="Spike" onclick="selectCharacterfnc('Spike')">
+                <img src="./Pictures/Spike.png" alt="Spike">
+                <p>Spike</p>
+            </div>
+            <div class="character" data-name="Depresso" onclick="selectCharacterfnc('Depresso')">
+                <img src="./Pictures/Pal.png" alt="Depresso">
+                <p>Depresso</p>
+            </div>
+            <div class="character" data-name="Link" onclick="selectCharacterfnc('Link')">
+                <img src="./Pictures/BotW_Wolf_Link_Model.png" alt="Link">
+                <p>Link</p>
+            </div>
+            <div class="character" data-name="Shovel" onclick="selectCharacterfnc('Shovel')">
+                <img src="./Pictures/Shovel2.png" alt="Shovel">
+                <p>Shovel</p>
+            </div>
+            <div class="character" data-name="Lingling" onclick="selectCharacterfnc('LingLing')">
+                <img src="./Pictures/LingLing.png" alt="Lingling">
+                <p>Lingling</p>
+            </div>
+        </div>
+    </div>
+    <div class="circle"></div>
+    <div class="warn">WARNING: CONTAINS SOUND</div>
+    <audio id="hover-sound" src="./Sounds/mouseHover.wav"></audio>
+    <audio id="select-sound" src="./Sounds/Select.wav"></audio>
+    <script src="character.js"></script>
+   
+</body>
+</html>

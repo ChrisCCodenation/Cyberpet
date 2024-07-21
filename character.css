@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: #f0f0f0; */
+    background-image: url('./Pictures/Character\ Select\ bgd.jpg');
+    background-size: cover; /* or 'contain', 'auto' */
+    background-repeat: no-repeat; /* or 'repeat', 'repeat-x', 'repeat-y' */
+    background-position: center; /* or 'top', 'bottom', 'left', 'right', 'center' */
+}
+
+.title {
+    display: flex;
+    text-align: start;
+    margin-top: -50px; /* Move the title up */
+    font-size: 3em; /* Adjust font size if necessary */
+}
+
+.character-selection {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #962929, -1px 1px 0 #861c1c, 1px 1px 0 #000000;
+    font-size: 200%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 2000px;
+    /* border: solid red; */
+}
+
+.characters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+    height: auto; 
+    /* border: solid red; */
+}
+
+.character {
+    cursor: pointer;
+    padding: 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    width: 250px; 
+    height: 250px;
+    /* border: solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.character:hover {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+.character img {
+    width: 100%;
+    height: auto;
+}
+
+.character p {
+    font-size: 1.5em;
+    margin-top: 10px; 
+}
+
+.character.selected {
+    background: radial-gradient(circle, rgb(6, 210, 217) 0%, rgba(255, 255, 255, 0) 80%);
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: 2;
+}
+.warn {
+    color: red;
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

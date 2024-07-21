@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="class-selection">
+            <h1 class="title">Select Your Class</h1>
+            <div class="options">
+                <button class="dnd" data-name="Barbarian">
+                    <img src="./Pictures/Barbarian.png" alt="Barbarian">
+                    <p>Barbarian</p>
+                </button>
+                <button class="dnd" data-name="Mage">
+                    <img src="./Pictures/Wizard.png" alt="Mage">
+                    <p>Mage</p>
+                </button>
+                <button class="dnd" data-name="Rogue">
+                    <img src="./Pictures/Rogue.png" alt="Rogue">
+                    <p>Rogue</p>
+                </button>
+                <button class="dnd" data-name="Bard">
+                    <img src="./Pictures/Bard.png" alt="Bard">
+                    <p>Bard</p>
+                </button>
+                <button class="dnd" data-name="Cleric">
+                    <img src="./Pictures/Cleric.png" alt="Cleric">
+                    <p>Cleric</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="warn">WARNING: CONTAINS SOUND</div>
+    <audio id="hover-sound" src="Sounds/mouseHover.wav"></audio>
+    <audio id="select-sound" src="Sounds/Select.wav"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
